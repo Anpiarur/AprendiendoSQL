@@ -1,3 +1,4 @@
+/*CONSULTAS SOBRE UNA TABLA*/
 SELECT nombre FROM producto;
 SELECT nombre, precio FROM producto;
 SELECT * FROM producto;
@@ -34,3 +35,25 @@ SELECT nombre FROM fabricante WHERE nombre LIKE '____';
 SELECT nombre FROM producto WHERE nombre REGEXP 'Port[aá]til'; 
 SELECT nombre FROM producto WHERE nombre REGEXP 'Monitor' AND  precio <215;
 SELECT nombre , precio FROM producto WHERE precio>=180 ORDER BY precio DESC, nombre;
+/*CONSULTAS RESUMEN*/
+SELECT COUNT(*) AS Total FROM producto;
+SELECT COUNT(*) AS Total FROM fabricante;
+SELECT COUNT(DISTINCT codigo_fabricante) AS CodigoDistintos FROM producto;
+SELECT AVG(precio) AS PrecioMedio FROM producto;
+SELECT MIN(precio) AS PrecioMinimo FROM producto;
+SELECT MAX(precio) AS PrecioMaximo FROM producto;
+SELECT nombre, MIN(precio) FROM producto;
+SELECT nombre, MAX(precio) FROM producto;
+SELECT SUM(precio) AS SumaPrecios FROM producto;
+SELECT COUNT(*) AS productos FROM producto WHERE codigo_fabricante=1;
+SELECT AVG(precio) AS mediaAsus FROM producto WHERE codigo_fabricante=1;
+SELECT nombre, MIN(precio) AS productoBarato FROM producto WHERE codigo_fabricante=1;
+SELECT SUM(precio) AS SumaProductos FROM producto WHERE codigo_fabricante=1;
+SELECT 
+MAX(precio) AS PrecioMaximo,
+MIN(precio) AS PrecioMinimo,
+AVG(precio) AS PrecioMedio
+COUNT(*) AS Total
+FROM producto WHERE codigo_fabricante=6;
+SELECT COUNT(*) FROM producto WHERE precio>=180;
+/*AGRUPAMIENTOS*/
