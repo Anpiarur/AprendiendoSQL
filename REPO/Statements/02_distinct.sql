@@ -1,0 +1,3 @@
+SELECT DISTINCT * FROM usuario;
+
+SELECT DISTINCT age FROM usuario;
