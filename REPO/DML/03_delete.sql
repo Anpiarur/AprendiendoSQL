@@ -1,0 +1,5 @@
+DELETE FROM usuario
+WHERE user_id=20;
+
+-- RECUERDA SIEMPRE WHERE
+
