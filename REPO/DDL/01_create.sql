@@ -2,9 +2,11 @@ CREATE DATABASE IF NOT EXISTS test_mysql;
 
 
 CREATE TABLE IF NOT EXISTS persons(
-    id INT AUTO INCREMENTAL,
-    name VARCHAR(10),
+    id INT NOT NULL,
+    name VARCHAR(10) NOT NULL,
     age INT,
     email VARCHAR (20),
-    created DATE
+    created DATETIME,
+    UNIQUE (email);
+    PRIMARY KEY (id)
 );
