@@ -2,11 +2,33 @@ CREATE DATABASE IF NOT EXISTS test_mysql;
 
 
 CREATE TABLE IF NOT EXISTS persons(
-    id INT NOT NULL,
+    id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(10) NOT NULL,
     age INT,
     email VARCHAR (20),
-    created DATETIME,
-    UNIQUE (email);
+    created DATETIME DEFAULT CURRENT_TIMESTAMP(),
+    UNIQUE (email),
     PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS workers(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(10) NOT NULL,
+    age INT,
+    email VARCHAR (20),
+    created DATETIME DEFAULT CURRENT_TIMESTAMP(),
+    UNIQUE (email),
+    PRIMARY KEY (id),
+    CHECK(age>=18)
+);
+
+CREATE TABLE IF NOT EXISTS person_test(
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(10) NOT NULL,
+    age INT,
+    email VARCHAR (20),
+    created DATETIME DEFAULT CURRENT_TIMESTAMP(),
+    UNIQUE (email),
+    PRIMARY KEY (id),
+    CHECK(age>=18)
 );
