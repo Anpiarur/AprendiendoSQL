@@ -1,0 +1,28 @@
+INSERT INTO languages (name) VALUES ('Java');
+INSERT INTO languages (name) VALUES ('PHP');
+INSERT INTO languages (name) VALUES ('C++');
+INSERT INTO languages (name) VALUES ('Phython');
+INSERT INTO languages (name) VALUES ('Pascal');
+INSERT INTO languages (name) VALUES ('COBOL');
+INSERT INTO languages (name) VALUES ('C#');
+INSERT INTO languages (name) VALUES ('.NET');
+INSERT INTO languages (name) VALUES ('Javascript');
+
+INSERT INTO user_languages (language_id, user_id) VALUES ('1','1');
+INSERT INTO user_languages (language_id, user_id) VALUES ('1','2');
+INSERT INTO user_languages (language_id, user_id) VALUES ('1','4');
+INSERT INTO user_languages (language_id, user_id) VALUES ('1','5');
+INSERT INTO user_languages (language_id, user_id) VALUES ('1','8');
+INSERT INTO user_languages (language_id, user_id) VALUES ('1','6');
+INSERT INTO user_languages (language_id, user_id) VALUES ('7','1');
+INSERT INTO user_languages (language_id, user_id) VALUES ('7','2');
+INSERT INTO user_languages (language_id, user_id) VALUES ('7','4');
+INSERT INTO user_languages (language_id, user_id) VALUES ('7','5');
+INSERT INTO user_languages (language_id, user_id) VALUES ('7','8');
+INSERT INTO user_languages (language_id, user_id) VALUES ('7','6');
+INSERT INTO user_languages (language_id, user_id) VALUES ('6','3');
+INSERT INTO user_languages (language_id, user_id) VALUES ('6','7');
+INSERT INTO user_languages (language_id, user_id) VALUES ('8','3');
+INSERT INTO user_languages (language_id, user_id) VALUES ('8','7');
+INSERT INTO user_languages (language_id, user_id) VALUES ('4','5');
+INSERT INTO user_languages (language_id, user_id) VALUES ('9','5');
