@@ -33,3 +33,7 @@ DELIMITER ;
 
 --VAMOS A PROBARLO
 UPDATE users SET email='email@prueba.com' WHERE id=2;
+
+
+--ELIMINAR TRIGGER
+DROP TRIGGER tg_email;

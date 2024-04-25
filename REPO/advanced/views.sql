@@ -1,0 +1,12 @@
+/* REPRESENTACION VIRTUAL DE UNA O MAS TABLAS*/
+CREATE VIEW v_adult_users AS
+SELECT name, age
+FROM users
+WHERE age>=18
+;
+
+--CONSULTAR VISTA
+SELECT * FROM v_adult_users;
+
+--BORRAR VISTA
+DROP VIEW v_adult_users;
